@@ -5,12 +5,12 @@
 
   <div class="field">
     <%= f.label :email %><br />
-    <%= f.email_field :email, autofocus: true %>
+    <%= f.email_field :email, autofocus: true, class: "form-control" %>
   </div>
+<!-- Fix the padding-top for this reset password button and remove <br /> -->
+<br />
 
-  <div class="actions">
-    <%= f.submit "Send me reset password instructions" %>
-  </div>
+<%= f.submit "Send me reset password instructions", class: "btn btn-primary btn-lg" %>
 <% end %>
-
+<br />
 <%= render "devise/shared/links" %>
