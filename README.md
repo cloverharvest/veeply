@@ -18,4 +18,9 @@ This is a practice Rangular App to manage customer information.
 
 * Deployment instructions
 
-During development: will only accept @ example.com emails as valid
+
+Remember:
+1) During development: will only accept @example.com emails as valid
+2) Restart server when changing the initializer
+3) At least as of Sept. 2016, bootstrap-sass-official is now called bootstrap-sass. Need to change this when declaring as asset in Gemfile.
+4) To see visual rep of db: rails dbconsole => \x on => select * from users; => \q
