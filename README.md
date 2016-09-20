@@ -17,3 +17,5 @@ This is a practice Rangular App to manage customer information.
 * Services (job queues, cache servers, search engines, etc.)
 
 * Deployment instructions
+
+During development: will only accept @ example.com emails as valid
