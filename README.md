@@ -24,5 +24,5 @@ Remember:
 2. Restart server when changing the initializer  
 3. At least as of Sept. 2016, bootstrap-sass-official is now called bootstrap-sass. Need to change this when declaring as asset in Gemfile.  
 4. To see visual rep of db: rails dbconsole => \x on => select * from users; => \q  
-5. check_constraint for postgresql => acts as an extra layer of protection to check email column of invalid values aside from frontend validation of email
+5. check_constraint for postgresql => acts as an extra layer of protection to check email column of invalid values aside from frontend validation of email  
 6. update_attribute of Rails- SW
