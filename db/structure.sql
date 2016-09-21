@@ -46,6 +46,36 @@ CREATE TABLE ar_internal_metadata (
 
 
 --
+-- Name: customer_search_terms; Type: TABLE; Schema: public; Owner: -
+--
+
+CREATE TABLE customer_search_terms (
+    id integer NOT NULL,
+    created_at timestamp without time zone NOT NULL,
+    updated_at timestamp without time zone NOT NULL
+);
+
+
+--
+-- Name: customer_search_terms_id_seq; Type: SEQUENCE; Schema: public; Owner: -
+--
+
+CREATE SEQUENCE customer_search_terms_id_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+--
+-- Name: customer_search_terms_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
+--
+
+ALTER SEQUENCE customer_search_terms_id_seq OWNED BY customer_search_terms.id;
+
+
+--
 -- Name: customers; Type: TABLE; Schema: public; Owner: -
 --
 
@@ -133,6 +163,13 @@ ALTER SEQUENCE users_id_seq OWNED BY users.id;
 -- Name: id; Type: DEFAULT; Schema: public; Owner: -
 --
 
+ALTER TABLE ONLY customer_search_terms ALTER COLUMN id SET DEFAULT nextval('customer_search_terms_id_seq'::regclass);
+
+
+--
+-- Name: id; Type: DEFAULT; Schema: public; Owner: -
+--
+
 ALTER TABLE ONLY customers ALTER COLUMN id SET DEFAULT nextval('customers_id_seq'::regclass);
 
 
@@ -149,6 +186,14 @@ ALTER TABLE ONLY users ALTER COLUMN id SET DEFAULT nextval('users_id_seq'::regcl
 
 ALTER TABLE ONLY ar_internal_metadata
     ADD CONSTRAINT ar_internal_metadata_pkey PRIMARY KEY (key);
+
+
+--
+-- Name: customer_search_terms_pkey; Type: CONSTRAINT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY customer_search_terms
+    ADD CONSTRAINT customer_search_terms_pkey PRIMARY KEY (id);
 
 
 --
@@ -209,6 +254,6 @@ CREATE UNIQUE INDEX index_users_on_reset_password_token ON users USING btree (re
 
 SET search_path TO "$user", public;
 
-INSERT INTO schema_migrations (version) VALUES ('20160919025919'), ('20160920152220'), ('20160921063031');
+INSERT INTO schema_migrations (version) VALUES ('20160919025919'), ('20160920152220'), ('20160921063031'), ('20160921220044');
 
 
