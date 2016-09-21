@@ -28,4 +28,6 @@ Remember:
 6. update_attribute of Rails- SW  
 7. After informing Rails to use SQL to store the schema, delete app/assets/javascripts/cable.js to prevent devise error(which thinks that action cable is required) and update config/application.rb.  
 8. Rails validation => customer experience, check_constraint => security => code duplication which is ot good but => use test for each part of the stack to fight inconsistency in app.  
-9. Faker gem handy for seeding data.
+9. Faker gem handy for seeding data.  
+10. sr-only => screen reader only for acessibility, content or feature shows only when screen reader function is available and utilized by end-user  
+11. thead, tr => th, td  
