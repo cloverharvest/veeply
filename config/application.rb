@@ -1,25 +1,3 @@
-# require_relative 'boot'
-#
-# require 'rails/all'
-# # Require the gems listed in Gemfile, including any gems
-# # you've limited to :test, :development, or :production.
-# Bundler.require(*Rails.groups)
-#
-# module Veeply
-#   class Application < Rails::Application
-#     config.active_record.schema_format = ​:sql​
-#   end
-# end
-
-
-#---
-# Excerpted from "Rails, Angular, Postgres, and Bootstrap",
-# published by The Pragmatic Bookshelf.
-# Copyrights apply to this code. It may not be used to create training material,
-# courses, books, articles, and the like. Contact us if you are in doubt.
-# We make no guarantees that this code is fit for any purpose.
-# Visit http://www.pragmaticprogrammer.com/titles/dcbang for more book information.
-#---
 require File.expand_path('../boot', __FILE__)
 
 # Pick the frameworks you want:
