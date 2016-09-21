@@ -27,4 +27,5 @@ Remember:
 5. check_constraint for postgresql => acts as an extra layer of protection to check email column of invalid values aside from frontend validation of email  
 6. update_attribute of Rails- SW  
 7. After informing Rails to use SQL to store the schema, delete app/assets/javascripts/cable.js to prevent devise error(which thinks that action cable is required) and update config/application.rb.  
-8. Rails validation => customer experience, check_constraint => security => code duplication which is ot good but => use test for each part of the stack to fight inconsistency in app.
+8. Rails validation => customer experience, check_constraint => security => code duplication which is ot good but => use test for each part of the stack to fight inconsistency in app.  
+9. Faker gem handy for seeding data.
