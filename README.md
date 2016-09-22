@@ -31,3 +31,4 @@ Remember:
 9. Faker gem handy for seeding data.  
 10. sr-only => screen reader only for acessibility, content or feature shows only when screen reader function is available and utilized by end-user  
 11. thead, tr => th, td  
+12. Postgres performs decently for case_insensitive_search and like.  
