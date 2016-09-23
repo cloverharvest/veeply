@@ -15,4 +15,5 @@ class CustomersController < ApplicationController
       @customers = []
     end
   end
+
 end
