@@ -33,3 +33,5 @@ Remember:
 11. thead, tr => th, td  
 12. Postgres performs decently for case_insensitive_search and like.  
 13. Pagination using index, Postgres 'order by', and Bootstrap components  
+14. browser-based request(Rails) vs AJAX request(Angular-). use respond_to method of Rails and then use json to specify the JSON data that we want to be returned (e.g. @ customers)  
+ 
