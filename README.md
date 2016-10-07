@@ -37,6 +37,19 @@ Remember:
 15. Types of tests made:  
 a) Test database constraints => `bundle exec rspec spec/models/user_spec.rb` or `rspec spec/models/user_spec.rb`
 b) Acceptance tests =>  PhantomJS <= Poltergeist <= Capybara  
+=> used homebrew to install PhantomJS, using this via ruby curl automatically sets it into PATH vs. downloading direct from PhantomJS web site.
+    =>http://macappstore.org/phantomjs-2/
+      =>Install the App  
+        Press Command+Space and type Terminal and press enter/return key.  
+        Run in Terminal app:  
+        `ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)" < /dev/null 2> /dev/null`  
+        and press enter/return key. Wait for the command to finish.  
+        Run:  
+        `brew install phantomjs`
+        Check if in path:
+        `which phantomjs`
+        => /usr/local/bin/phantomjs
+        Done! You can now use phantomjs.
 
 => use the method `feature` instead of `describe` to indicate that this is an acceptance test
 => `rspec​​ ​​spec/features/angular_test_app_spec.rb​` for testing page `/angular_test`,
