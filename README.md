@@ -34,4 +34,6 @@ Remember:
 12. Postgres performs decently for case_insensitive_search and like.  
 13. Pagination using index, Postgres 'order by', and Bootstrap components  
 14. browser-based request(Rails) vs AJAX request(Angular-). use respond_to method of Rails and then use json to specify the JSON data that we want to be returned (e.g. @ customers)  
-15. `bundle exec rspec spec/models./user_spec.rb works` BUT `rspec spec/models./user_spec.rb` throws a loading error  
+15. Types of tests made:  
+a) Test database constraints => `bundle exec rspec spec/models./user_spec.rb` works BUT `rspec spec/models./user_spec.rb` throws a loading error  
+b) Acceptance tests =>  PhantomJS <= Poltergeist <= Capybara  
