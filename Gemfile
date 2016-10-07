@@ -42,6 +42,7 @@ group :development, :test do
   gem 'poltergeist'
   gem 'phantomjs'
   gem 'teaspoon-jasmine'
+  gem 'database_cleaner'
 end
 
 group :development do
