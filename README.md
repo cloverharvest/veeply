@@ -37,3 +37,5 @@ Remember:
 15. Types of tests made:  
 a) Test database constraints => `bundle exec rspec spec/models./user_spec.rb` or `rspec spec/models/user_spec.rb`
 b) Acceptance tests =>  PhantomJS <= Poltergeist <= Capybara  
+
+c) Test Angular code => `bundle exec rake teaspoon`; PhantomJS was installed as a gem  
