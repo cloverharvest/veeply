@@ -38,5 +38,8 @@ Remember:
 a) Test database constraints => `bundle exec rspec spec/models/user_spec.rb` or `rspec spec/models/user_spec.rb`
 b) Acceptance tests =>  PhantomJS <= Poltergeist <= Capybara  
 
-=> use the method `feature` instead of `describe` to indicate that this is an accpetance test
+=> use the method `feature` instead of `describe` to indicate that this is an acceptance test
+=> `rspec​​ ​​spec/features/angular_test_app_spec.rb​` for testing page `/angular_test`,
+=> refer to `angular_test_app_spec.rb` login simulated, then angular_test page was checked and its DOM for exact content
+
 c) Test Angular code => `bundle exec rake teaspoon`; PhantomJS was installed as a gem  
