@@ -34,12 +34,11 @@ Remember:
 12. Postgres performs decently for case_insensitive_search and like.  
 13. Pagination using index, Postgres 'order by', and Bootstrap components  
 14. browser-based request(Rails) vs AJAX request(Angular-). use respond_to method of Rails and then use json to specify the JSON data that we want to be returned (e.g. @ customers)  
-15. Types of tests made:  
-a) Test database constraints => `bundle exec rspec spec/models/user_spec.rb` or `rspec spec/models/user_spec.rb`
-b) Acceptance tests =>  PhantomJS <= Poltergeist <= Capybara  
-=> used homebrew to install PhantomJS, using this via ruby curl automatically sets it into PATH vs. downloading direct from PhantomJS web site.
-    =>http://macappstore.org/phantomjs-2/
-      =>Install the App  
+15. Test database constraints => `bundle exec rspec spec/models/user_spec.rb` or `rspec spec/models/user_spec.rb`  
+16. Acceptance tests =>  PhantomJS <= Poltergeist <= Capybara  
+a.) used homebrew to install PhantomJS, using this via ruby curl automatically sets it into PATH vs. downloading direct from PhantomJS web site.
+    =>http://macappstore.org/phantomjs-2/  
+    =>Install the App  
         Press Command+Space and type Terminal and press enter/return key.  
         Run in Terminal app:  
         `ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)" < /dev/null 2> /dev/null`  
@@ -50,9 +49,7 @@ b) Acceptance tests =>  PhantomJS <= Poltergeist <= Capybara
         `which phantomjs`
         => /usr/local/bin/phantomjs
         Done! You can now use phantomjs.
-
-=> use the method `feature` instead of `describe` to indicate that this is an acceptance test
-=> `rspec​​ ​​spec/features/angular_test_app_spec.rb​` for testing page `/angular_test`,
-=> refer to `angular_test_app_spec.rb` login simulated, then angular_test page was checked and its DOM for exact content
-
-c) Test Angular code => `bundle exec rake teaspoon`; PhantomJS was installed as a gem  
+b.) use the method `feature` instead of `describe` to indicate that this is an acceptance test  
+c.) `rspec​​ ​​spec/features/angular_test_app_spec.rb​` for testing page `/angular_test`  
+d.) refer to `angular_test_app_spec.rb` login simulated, then angular_test page was checked and its DOM for exact content  
+17. Test Angular code => `bundle exec rake teaspoon`; PhantomJS was installed as a gem  
