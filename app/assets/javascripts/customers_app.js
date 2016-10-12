@@ -1,5 +1,5 @@
 // This will be picked up by the asset pipeline
-var app = angular.module('customers', [ ]);
+var app = angular.module('customers', ['ngRoute']);
 
 app.controller("CustomerSearchController", [
         "$scope","$http",
