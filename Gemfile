@@ -15,7 +15,7 @@ gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.2'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
-
+gem 'hike'
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
@@ -32,6 +32,9 @@ gem 'devise'
 gem 'bower-rails'
 
 gem 'faker'
+
+
+gem 'sprockets', '~>2.0'
 
 group :development, :test do
   gem 'rspec-rails', '~>3.0'
