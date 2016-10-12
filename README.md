@@ -53,3 +53,5 @@ b.) use the method `feature` instead of `describe` to indicate that this is an a
 c.) `rspec​​ ​​spec/features/angular_test_app_spec.rb​` for testing page `/angular_test`  
 d.) refer to `angular_test_app_spec.rb` login simulated, then angular_test page was checked and its DOM for exact content  
 17. Test Angular code => `bundle exec rake teaspoon`; PhantomJS was installed as a gem  
+18. Unit test for Angular is not able to find the 4 specs.-- to solve  
+19. The Angular route is relative to the URL that rendered the ng-app directive.
