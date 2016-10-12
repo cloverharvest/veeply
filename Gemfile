@@ -33,7 +33,7 @@ gem 'bower-rails'
 
 gem 'faker'
 
-
+gem 'angular-rails-templates'
 gem 'sprockets', '~>2.0'
 
 group :development, :test do
