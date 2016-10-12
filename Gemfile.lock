@@ -39,10 +39,6 @@ GEM
       minitest (~> 5.1)
       tzinfo (~> 1.1)
     addressable (2.4.0)
-    angular-rails-templates (1.0.2)
-      railties (>= 4.2, < 6)
-      sprockets (2.0)
-      tilt
     arel (7.1.2)
     bcrypt (3.1.11)
     bower-rails (0.11.0)
@@ -206,7 +202,6 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  angular-rails-templates
   bower-rails
   byebug
   coffee-rails (~> 4.2)
