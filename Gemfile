@@ -33,6 +33,7 @@ gem 'bower-rails'
 
 gem 'faker'
 
+gem 'angular-rails-templates'
 
 group :development, :test do
   gem 'rspec-rails', '~>3.0'
