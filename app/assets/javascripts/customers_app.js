@@ -1,16 +1,5 @@
 // This will be picked up by the asset pipeline
-var app = angular.module('customers', ['ngRoute', 'templates']);
-
-app.config([
-            "$routeProvider",
-    function($routeProvider) {
-      //configure routes here..
-      $routeProvider.when("/", {
-        controller: "CustomerSearchController",
-        templateUrl: "customer_search.html"
-      });
-    }
-]);
+var app = angular.module('customers', ['ngRoute']);
 
 app.controller("CustomerSearchController", [
         "$scope","$http",
