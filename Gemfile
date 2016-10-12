@@ -33,12 +33,6 @@ gem 'bower-rails'
 
 gem 'faker'
 
-<<<<<<< HEAD
-gem 'angular-rails-templates'
-gem 'sprockets', '2.0'
-=======
->>>>>>> parent of 0a67184... Pin sprockets to 2.0
-
 group :development, :test do
   gem 'rspec-rails', '~>3.0'
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
