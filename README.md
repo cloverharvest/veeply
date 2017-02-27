@@ -1,4 +1,6 @@
-# README
+# Veeply
+
+<a href="https://codeclimate.com/github/cloverharvest/veeply"><img src="https://codeclimate.com/github/cloverharvest/veeply/badges/gpa.svg" /></a>
 
 This is a practice Rangular App to manage customer information.
 
